@@ -1,5 +1,7 @@
 'use strict';
 
+const { children } = require("cheerio/lib/api/traversing");
+
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 1 - Review
@@ -54,6 +56,17 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
+  return charArray.sort((a, b) => {
+    if (a.children.length !== b.children.length) {
+      return a.children.length - b.children.length
+    } else {
+      if (a.house < b.house) {
+        return -1;
+      } else {
+        return 1;
+      }
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -107,6 +120,9 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  let regEx = /\b[A-Z][a-z]{1,}/g;
+  let output = str.match(regEx);
+  return output || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -117,8 +133,16 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  let atjArr = [];
+  let regEx = /^[A-J]+.{1,}/
+  for (let i = 0; i < arr.length; i++) {
+    if (regEx.test(arr[i])) {
+      atjArr.push(arr[i]);
+    };
+  };
+  console.log(atjArr);
+  return atjArr;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
