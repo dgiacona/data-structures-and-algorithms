@@ -12,6 +12,8 @@ Write a function named screenForNames that takes in an array of strings and uses
 
 const screenForNames = (arr) => {
   // Solution code here...
+  let regex = /^(Mr\.|Mrs\.|Ms\.|Dr\.)\s[A-Za-z]+/;
+  return arr.filter(str => regex.test(str));
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,6 +102,8 @@ let starWarsData = [{
 
 let biggerThanLuke = (arr) => {
   // Solution code here...
+  let luke = arr.find(charc => charc.name === 'Luke Skywalker');
+  return arr.filter(charc => parseInt(charc.mass) > parseInt(luke.mass)).map(charc => charc.name).join(' - ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,6 +122,7 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
+  return arr.sort((A,B) => A[property] < B[property] ? -1 : 1);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -134,6 +139,8 @@ https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
   // Solution code here...
+  let reg = /^(https:\/\/).+/;
+  return reg.test(url);
 };
 
 /* ------------------------------------------------------------------------------------------------
