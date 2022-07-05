@@ -8,6 +8,14 @@ Write a function named longestString that takes in an array of strings and retur
 
 const longestString = (arr) => {
 // Solution code here...
+let longString;
+  if (arr.length > 0) {
+    longString = arr.reduce((a, b) => {
+      b.length > a.length ? a = b : a = a;
+      return a;
+    });
+  }
+  return arr.indexOf(longString);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +54,10 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
+  return arr.map(string => {
+    let regex=/\d/g;
+    return string.match(regex).join('');
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,6 +70,11 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+  let oddString = '';
+  for(let i=1; i<str.length; i += 2){
+    oddString+=str[i];
+  }
+  return oddString;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,6 +85,8 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
+  let newArr = arr.filter(string => string.includes(':)'));
+  return newArr.length === arr.length?true:false;
 };
 
 /* ------------------------------------------------------------------------------------------------
