@@ -6,3 +6,4 @@
 
 - [Array Reverse](/python/code_challenges/array-reverse/README.md)
 - [insert Shift Array](/python/code_challenges/array-reverse/README.md)
+- [Linked List](/python/code_challenges/linked-list/README.md
