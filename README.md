@@ -10,4 +10,4 @@
 - [Linked List Insertion](/python/code_challenges/linked-list-insertions/README.md)
 - [Linked List kth](/python/code_challenges/linked-list-kth/)
 - [Linked List Zip](/python/code_challenges/linked-list-zip/)
-
+- [stack-and-queue](/python/code_challenges/stack-and-queue/)
