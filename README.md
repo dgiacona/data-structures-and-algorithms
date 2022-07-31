@@ -6,6 +6,7 @@
 
 - [Array Reverse](/python/code_challenges/array-reverse/README.md)
 - [insert Shift Array](/python/code_challenges/array-reverse/README.md)
+- [Binary Search](/python/code_challenges/array-binary-search/)
 - [Linked List](/python/code_challenges/linked-list/README.md)
 - [Linked List Insertion](/python/code_challenges/linked-list-insertions/README.md)
 - [Linked List kth](/python/code_challenges/linked-list-kth/)
