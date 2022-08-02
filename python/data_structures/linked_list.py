@@ -79,7 +79,23 @@ class LinkedList:
                 current = current.next
         raise TargetError
 
-
+    def kth_from_end(self, value):
+        if value < 0:
+            raise TargetError
+        ref_arr = []
+        current = self.head
+        while current:
+            ref_arr.append(current.value)
+            current = current.next
+        length_of_ref_arr = len(ref_arr)
+        print(ref_arr)
+        target_idx = length_of_ref_arr - (value + 1)
+        print(target_idx)
+        print(ref_arr[target_idx])
+        if ref_arr[target_idx] and target_idx >= 0:
+            return ref_arr[target_idx]
+        else:
+            raise TargetError
 
 
 
