@@ -3,31 +3,18 @@ from data_structures.stack import Stack
 
 class PseudoQueue:
     def __init__(self):
-        # initialization here
-        self.front = None
-        self.rear = None
+        self.in_stack = Stack()
+        self.out_stack = Stack()
 
     def enqueue(self, value):
-        # method body here
-        new_rear = Node(value)
-        if not self.rear:
-            self.rear = new_rear
-            self.front = new_rear
-        else:
-            old_rear = self.rear
-            old_rear.next = new_rear
-            self.rear = new_rear
+        while self.out_stack.top:
+            self.in_stack.push(self.out_stack.pop())
+        self.in_stack.push(value)
 
     def dequeue(self):
-        if not self.front:
-            raise InvalidOperationError
-        else:
-            # remove front
-            # reset front
-            # return value
-            old_front = self.front
-            self.front = self.front.next
-            return old_front.value
+        while self.in_stack.top:
+            self.out_stack.push(self.in_stack.pop())
+        return self.out_stack.pop()
 
     def peek(self):
         if not self.front:
