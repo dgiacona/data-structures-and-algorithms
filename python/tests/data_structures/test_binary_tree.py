@@ -2,7 +2,7 @@ import pytest
 from data_structures.binary_tree import BinaryTree, Node
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_exists():
     assert BinaryTree
 
