@@ -6,23 +6,24 @@ def breadth_first(tree):
     tree_breadth = Queue()
     values = []
 
-    if tree.root:
-        tree_breadth.enqueue(tree.root)
-
-    if tree.root:
+    if tree.root is None:
         return values
 
+    if not tree_breadth.front:
+        tree_breadth.enqueue(tree.root)
+
     while not tree_breadth.is_empty():
-        node_front = tree_breadth.front.value
 
+        values.append(tree_breadth.front.value.value)
+        front_node = tree_breadth.front.value
 
-        if node_front.left:
-            tree_breadth.enqueue(node_front.left)
+        if front_node.left:
+            tree_breadth.enqueue(front_node.left)
 
-        if node_front.right:
-            tree_breadth.enqueue(node_front.right)
+        if front_node.right:
+            tree_breadth.enqueue(front_node.right)
 
-        values.append(tree_breadth.dequeue().value)
-
+        tree_breadth.dequeue()
+        
     return values
 
