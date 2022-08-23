@@ -7,11 +7,13 @@ When using insertion sorting for an aray there is a flow and process that follow
 the first element in the array to be sorted. By us assuming that the fiest element is sorted our focus shifts
 to the second element in the array.
 <br>
+<br>
 This is the start of the process and comparing the elements looking for what element has the greater value. We
 can name the element in focus as the key element. As we have our sights on the key element we have to make a
 decision on where it is placed based on if it is greater than the first element or not. If the key is greater
 than the first element it is placed after the first element if it is less than the first element then it is placed
 in front of the first element.
+<br>
 <br>
 This process continues until the array has been sorted.
 
