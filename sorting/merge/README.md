@@ -15,4 +15,4 @@ What's happening is the array was split in half. Then the next step is to break 
 arrays into smaller arrays until there is only one number in each array. Then we begin to merge
 the numbers back together sorting each side until ultimately we merge the entire array back together.
 
-![Example_Array](../../../../../Desktop/example_array.png)
+![Example_Array](/example_array.png)
