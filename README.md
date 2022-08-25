@@ -1,14 +1,19 @@
-# Data Structures and Algorithms
-
 ### 401 Data Structures, Code Challenges
-
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
-
-- [Array Reverse](/python/code_challenges/array-reverse/README.md)
-- [insert Shift Array](/python/code_challenges/array-reverse/README.md)
-- [Binary Search](/python/code_challenges/array-binary-search/)
-- [Linked List](/python/code_challenges/linked-list/README.md)
-- [Linked List Insertion](/python/code_challenges/linked-list-insertions/README.md)
-- [Linked List kth](/python/code_challenges/linked-list-kth/)
-- [Linked List Zip](/python/code_challenges/linked-list-zip/)
-- [stack-and-queue](/python/code_challenges/stack-and-queue/)
+- CC 1: [Array Reversal](/python/docs/array-reverse/README.md)
+- CC 2: [Array Insert Shift](/python/docs/array-insert-shift/README.md)
+- CC 3: [Array Binary Search](python/docs/array-binary-search)
+- DS 05: [New DS: Linked List Implementation](python/docs/linked_list_implementation)
+- CC 06: [Linked List Insertions](python/code_challenges/array-insert-shift)
+- CC 07: [Linked List Kth](python/docs/kth_from_end)
+- CC 08: [Linked List Zip](python/docs/linked_list_zip)
+- CC 09: [Mock Interviews 01]()
+- DS 10: [New DS: Stack & Queue](python/docs/stack_and_queue)
+- CC 11: [Stack Queue Pseudo](python/docs/stack_queue_pseudo)
+- CC 12: [Stack Queue Animal Shelter](python/docs/stack_queue_animal_shelter)
+- CC 13: [Stack Queue Brackets](python/docs/stack_queue_brackets)
+- CC 14: [Mock Interviews 02]()
+- DS 15: [New DS: Binary Tree](python/docs/trees)
+- CC 16: [Tree Breadth First](python/docs/tree_breadth_first)
+- CC 17: [Tree Find Max](python/docs/tree_max)
+- CC 18: [Tree Fizz Buzz](python/docs/tree_fizz_buzz)
+- CC 19: []()
